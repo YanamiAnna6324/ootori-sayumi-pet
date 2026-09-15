@@ -14,7 +14,7 @@
 
 完整 v2 需要九个标准动作和十六个视线方向，8×11 格、每格 192×208，总尺寸 1536×2288。第 0 行第 6 列为 neutral frame。进食、睡眠可额外保留为预览动作；Codex 不会读取 `state-map.json` 自动增加原生状态。
 
-[动作与参考图计划](work/repair-v4/generation-plan.json) 和 [补画要求](work/repair-v4/generation-prompt.md) 已准备好。当前会话没有内置图像生成工具，API Key 也未配置；补画尚未执行。
+[动作与参考图计划](work/repair-v4/generation-plan.json) 和 [补画要求](work/repair-v4/generation-prompt.md) 已准备好。现有密钥保存在 Codex 服务配置中；同一服务的模型列表请求成功，但返回的 12 个模型中没有图像模型。当前会话也没有内置图像生成工具，补画尚未执行。模型列表不能证明图片接口一定不可用，仍需服务提供方确认相应模型与接口权限。项目不会保存或提交密钥。
 
 ## 安装器
 
