@@ -1,0 +1,114 @@
+{
+  "cutout_pixel_checks_ok": true,
+  "count": 7,
+  "preview_resource_links_ok": true,
+  "preview_browser_qa": "unavailable: CUA auth token unavailable",
+  "native_release_qa": "blocked: incomplete source silhouettes, overlapping effects, no generated action/gaze rows",
+  "assets": {
+    "idle": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "6515f838e79e463636b5ccdfb83a2fd4c8e29cc8aa24f2194d0a819a3677cecf",
+      "size": [
+        434,
+        452
+      ],
+      "native_animation_ready": false
+    },
+    "eating": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "01eb153389204a1876ae15463970d867a468d198c34b755218581ad62b011de4",
+      "size": [
+        933,
+        712
+      ],
+      "native_animation_ready": false
+    },
+    "surprised": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "1a4aa93afb6f41146c11017176d27a875e231908e29185d948ec3d4e868f03a9",
+      "size": [
+        564,
+        536
+      ],
+      "native_animation_ready": false
+    },
+    "working": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "b61d69cd867e234ebdab585804912347bb0757df9be91b1b1d81b8135191a00d",
+      "size": [
+        613,
+        577
+      ],
+      "native_animation_ready": false
+    },
+    "happy": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "075a1e44ff788eefe3dd286ac2d38f23993a8b1c61b2e6d4255d91b2042d70c7",
+      "size": [
+        960,
+        887
+      ],
+      "native_animation_ready": false
+    },
+    "affection": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "8fde12cc6297173607d8703c34966de4cf5174b9bcc7c491d37f8ef47854d30c",
+      "size": [
+        721,
+        723
+      ],
+      "native_animation_ready": false
+    },
+    "gift": {
+      "checks": {
+        "rgba": true,
+        "transparent_exterior": true,
+        "nonempty": true,
+        "hidden_rgb_zero": true,
+        "source_pixels_unchanged": true
+      },
+      "sha256": "de14eab21f1baeabcfd1fefe4c88b176f34dc8ecac598b1d7a13ecfa712e8f40",
+      "size": [
+        958,
+        910
+      ],
+      "native_animation_ready": false
+    }
+  }
+}

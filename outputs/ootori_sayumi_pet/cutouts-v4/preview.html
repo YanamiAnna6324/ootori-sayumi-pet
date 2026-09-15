@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ootori Sayumi pet · 透明素材预览</title>
+<style>
+  :root { font: 15px/1.6 system-ui, "Microsoft YaHei", sans-serif; color: #dce3ef; background: #111721; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 32px; max-width: 1120px; margin-inline: auto; }
+  h1 { margin: 0; font-size: 27px; font-weight: 650; }
+  p { color: #aebad0; margin: 8px 0 20px; }
+  button, select, a { font: inherit; }
+  button, select { padding: 8px 13px; border: 1px solid #48566c; border-radius: 8px; background: #202c3d; color: #f5f7fb; }
+  button { cursor: pointer; } button[aria-pressed="true"] { background: #395d83; border-color: #8fbee9; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 16px 0; }
+  #stage { height: 350px; position: relative; overflow: hidden; border: 1px solid #536177; border-radius: 14px; background-color: #263244; }
+  #stage[data-bg="light"] { background: #edece7; }
+  #stage[data-bg="checker"] { background-color: #c5cbd3; background-image: conic-gradient(#e8ebef 25%, transparent 0 50%, #e8ebef 0 75%, transparent 0); background-size: 32px 32px; }
+  #pet { width: 192px; height: 208px; object-fit: contain; position: absolute; left: calc(50% - 96px); top: calc(50% - 104px); user-select: none; touch-action: none; cursor: grab; }
+  #pet.dragging { cursor: grabbing; }
+  #note { min-height: 48px; margin: 12px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 13px; margin-top: 24px; }
+  .card { text-align: center; border: 1px solid #344054; border-radius: 12px; padding: 14px; background: #182332; }
+  .card img { width: 144px; height: 156px; object-fit: contain; display: block; margin: 0 auto 10px; }
+  a { color: #acd1fa; } footer { margin-top: 24px; color: #99aac0; }
+  @media(max-width:600px) { body { padding:20px; } h1 { font-size:23px; } }
+</style>
+<h1>Ootori Sayumi pet</h1>
+<p>透明素材预览 · 检查角色轮廓，拖动角色可查看不同位置的透明效果。</p>
+<div class="controls">
+  <label for="state">参考动作</label>
+  <select id="state">
+    <option value="idle">待机 · 原始全身模板</option>
+    <option value="eating">进食 · 冰棒</option>
+    <option value="surprised">惊讶 · 左侧 Sayumi</option>
+    <option value="working">工作 · 端茶</option>
+    <option value="happy">开心 · 冰淇淋</option>
+    <option value="affection">亲昵 · 粉色服装</option>
+    <option value="gift">庆祝 · 礼物</option>
+  </select>
+  <button type="button" data-background="dark" aria-pressed="true">深色背景</button>
+  <button type="button" data-background="light" aria-pressed="false">浅色背景</button>
+  <button type="button" data-background="checker" aria-pressed="false">透明棋盘</button>
+  <button type="button" id="zoom" aria-pressed="false">放大 1.5×</button>
+</div>
+<div id="stage" data-bg="dark"><img id="pet" src="idle.png" alt="Sayumi 待机透明角色" draggable="false"></div>
+<p id="note" role="status">待机保留第一张图的全身轮廓。当前显示静态抠图；完整动画与视线方向尚未完成。</p>
+<div class="gallery">
+  <a class="card" href="idle.png"><img src="idle.png" alt="待机">待机 PNG</a>
+  <a class="card" href="eating.png"><img src="eating.png" alt="进食">进食 PNG</a>
+  <a class="card" href="surprised.png"><img src="surprised.png" alt="惊讶">惊讶 PNG</a>
+  <a class="card" href="working.png"><img src="working.png" alt="工作">工作 PNG</a>
+  <a class="card" href="happy.png"><img src="happy.png" alt="开心">开心 PNG</a>
+  <a class="card" href="affection.png"><img src="affection.png" alt="亲昵">亲昵 PNG</a>
+  <a class="card" href="gift.png"><img src="gift.png" alt="礼物">礼物 PNG</a>
+</div>
+<footer>这些是原图抠图，部分原图本身为半身构图。尚未成为可安装的 Codex v2 动画包。<br>
+  <a href="light-dark-qa.png">深浅背景对照</a> · <a href="checkerboard-qa.png">棋盘检查图</a> · <a href="extraction-report.json">素材检查报告</a>
+</footer>
+<script>
+  const stage = document.querySelector('#stage');
+  const pet = document.querySelector('#pet');
+  const state = document.querySelector('#state');
+  const note = document.querySelector('#note');
+  const notes = {
+    idle: '待机保留第一张图的全身轮廓。当前显示静态抠图；完整动画与视线方向尚未完成。',
+    eating: '进食保留原图的冰棒与表情；原图顶部与下半身截断，需要补画后才能做全身动画。',
+    surprised: '已去除右侧人物和场景。橙色惊讶符号覆盖发丝，仍需补画修复。',
+    working: '保留端茶姿态和白色衣物；原图下半身截断，需补画。',
+    happy: '保留开心表情和冰淇淋。原图截断与覆盖角色的装饰尚待补画。',
+    affection: '已去除外层贴纸边框；保留可见角色，覆盖发丝的心形图案尚待补画。',
+    gift: '保留礼物、服装和角色轮廓。心形气泡覆盖头发，尚待补画。'
+  };
+  state.addEventListener('change', () => {
+    pet.src = state.value + '.png';
+    pet.alt = 'Sayumi ' + state.selectedOptions[0].textContent;
+    note.textContent = notes[state.value];
+  });
+  document.querySelectorAll('[data-background]').forEach(button => button.addEventListener('click', () => {
+    stage.dataset.bg = button.dataset.background;
+    document.querySelectorAll('[data-background]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  }));
+  let enlarged = false;
+  document.querySelector('#zoom').addEventListener('click', event => {
+    enlarged = !enlarged;
+    pet.style.width = (enlarged ? 288 : 192) + 'px';
+    pet.style.height = (enlarged ? 312 : 208) + 'px';
+    pet.style.left = `calc(50% - ${enlarged ? 144 : 96}px)`;
+    pet.style.top = `calc(50% - ${enlarged ? 156 : 104}px)`;
+    event.currentTarget.setAttribute('aria-pressed', String(enlarged));
+  });
+  let drag;
+  pet.addEventListener('pointerdown', event => {
+    const bounds = pet.getBoundingClientRect();
+    drag = {x: event.clientX - bounds.left, y: event.clientY - bounds.top};
+    pet.setPointerCapture(event.pointerId); pet.classList.add('dragging');
+  });
+  pet.addEventListener('pointermove', event => {
+    if (!drag) return;
+    const bounds = stage.getBoundingClientRect();
+    pet.style.left = Math.max(0, Math.min(stage.clientWidth - pet.offsetWidth, event.clientX - bounds.left - drag.x)) + 'px';
+    pet.style.top = Math.max(0, Math.min(stage.clientHeight - pet.offsetHeight, event.clientY - bounds.top - drag.y)) + 'px';
+  });
+  for (const event of ['pointerup', 'pointercancel', 'lostpointercapture']) pet.addEventListener(event, () => { drag = null; pet.classList.remove('dragging'); });
+</script>
+</html>

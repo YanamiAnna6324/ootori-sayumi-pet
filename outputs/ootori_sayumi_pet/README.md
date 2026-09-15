@@ -1,18 +1,9 @@
-# Ootori Sayumi pet Draft
+# Ootori Sayumi pet — 重做进行中
 
-Based on the primary reference image. Codex v2 atlas: 1536x2288, 192x208 cells, 8x11 rows.
+最新可查看素材：[透明预览](cutouts-v4/preview.html)、[深浅背景对照](cutouts-v4/light-dark-qa.png)、[素材检查报告](cutouts-v4/extraction-report.json)。
 
-States: idle, happy/jumping, shy/waiting, surprised/failed, thinking/running, greeting/waving, eating (mapped to interaction row pending dedicated source), sleeping (mapped to idle row pending dedicated source).
+旧 `spritesheet-extended.webp`、`decoded/`、`states_v2/`、`states_v3/` 和旧校验报告是保留的调试草稿。尺寸和清单字段正确不等于动画或透明处理通过验收。当前 `release-status.json` 标记为不可安装，安装器会保留已有客户端宠物。
 
-Files: pet.json, spritesheet-extended.webp, contact-sheet-extended.png, state-map.json, validation-extended.json.
+完整重做仍需补画被截断的身体和被装饰遮住的发丝，生成九个真正的动作循环与十六个视线方向，并通过结构和视觉校验。进食、睡眠是额外素材，`state-map.json` 不会为 Codex 增加原生状态。
 
-This is a usable draft. Atlas dimensions and v2 metadata are correct; official validation still reports 12 warnings around static rows and transparency thresholds. Dedicated eating and sleeping source art can be added in a later revision.
-## 安装到 Codex 客户端
-
-在 VS Code PowerShell 终端运行项目根目录下的 `install-pet.ps1`：
-
-```powershell
-.\install-pet.ps1
-```
-
-脚本会安装到 `$env:USERPROFILE\.codex\pets\ootori-sayumi-pet`，然后重启 Codex 客户端即可加载。
+详情见 [项目说明](../../README.md)。

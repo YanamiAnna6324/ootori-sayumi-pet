@@ -1,0 +1,282 @@
+{
+  "idle": {
+    "source": "微信图片_20260914205538_4_47.jpg",
+    "source_size": [
+      434,
+      462
+    ],
+    "crop_box": [
+      0,
+      0,
+      434,
+      452
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": false,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "pass_cutout",
+      "source_truncation": "Whole standing figure; very tight original left/right hair margins.",
+      "residuals": [],
+      "notes": "White background and floor ellipse removed; skin, white blouse, hair and legs remain opaque."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 60874
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "eating": {
+    "source": "微信图片_20260914205822_9_47.jpg",
+    "source_size": [
+      960,
+      712
+    ],
+    "crop_box": [
+      27,
+      0,
+      960,
+      712
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original cuts through crown/ponytail, lower torso and hair at the top/right/bottom canvas edges.",
+      "residuals": [
+        "Original white sticker rim around some hair edges retained."
+      ],
+      "notes": "All visible subject pixels retained, including right ponytail, white clothing and arm; patterned backdrop and detached top-left lettering removed."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 123123
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "surprised": {
+    "source": "微信图片_20260914205823_10_47.jpg",
+    "source_size": [
+      565,
+      536
+    ],
+    "crop_box": [
+      0,
+      0,
+      564,
+      536
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original duo scene crops Sayumi's left hair and lower dress; no unseen lower body was reconstructed.",
+      "residuals": [
+        "Three yellow reaction marks overlap the ponytail; retained instead of leaving holes in the hair."
+      ],
+      "notes": "Boy and boxes excluded by right silhouette guide; complete visible left Sayumi body and handheld gift retained."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 48644
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "working": {
+    "source": "微信图片_20260914205825_11_47.jpg",
+    "source_size": [
+      613,
+      584
+    ],
+    "crop_box": [
+      0,
+      6,
+      613,
+      583
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original is a bust at a straight lower crop and cuts the far-right ponytail.",
+      "residuals": [
+        "Some original pale sticker edging remains."
+      ],
+      "notes": "Hair, white sleeve, forearm, bowl and spoon retained; white background removed."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 108003
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "happy": {
+    "source": "微信图片_20260914205826_12_47.jpg",
+    "source_size": [
+      960,
+      887
+    ],
+    "crop_box": [
+      0,
+      0,
+      960,
+      887
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original cuts through crown/ponytail, lower body and hair at the top/right/bottom edges.",
+      "residuals": [
+        "Yellow sparkle and right lozenge touch/overlap the hair and are retained.",
+        "Original diagonal light rays are painted across the hair and clothes; cannot remove while preserving original RGB.",
+        "Thin ray fragments in the surrounding background remain."
+      ],
+      "notes": "Full original width, left hair and outstretched right hand retained; no arbitrary narrow crop."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 116719
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "affection": {
+    "source": "微信图片_20260914205827_13_47.jpg",
+    "source_size": [
+      752,
+      786
+    ],
+    "crop_box": [
+      30,
+      31,
+      751,
+      754
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original sticker is a bust with a straight bottom crop; no lower body exists.",
+      "residuals": [
+        "Small heart overlaps the hair and is retained."
+      ],
+      "notes": "Outer pink/white sticker border removed; visible hand, forearm and pink costume explicitly protected."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 119040
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  },
+  "gift": {
+    "source": "微信图片_20260914205828_14_47.jpg",
+    "source_size": [
+      960,
+      910
+    ],
+    "crop_box": [
+      0,
+      0,
+      958,
+      910
+    ],
+    "original_rgb_preserved": true,
+    "zero_rgb_under_alpha_zero": true,
+    "source_truncated": true,
+    "reconstructed": false,
+    "visible_region_complete": true,
+    "qa": {
+      "status": "reference_only",
+      "source_truncation": "Original crops hair/dress at left, right and bottom edges.",
+      "residuals": [
+        "Heart speech bubble covers ponytail pixels; retained because removal would require redrawing hidden hair."
+      ],
+      "notes": "Full original width and visible skirt, ponytails, arms and gift retained; white exterior removed."
+    },
+    "technical_checks": {
+      "rgba": true,
+      "nonempty": true,
+      "original_rgb_unchanged": true,
+      "hidden_rgb_zero": true,
+      "transparent_pixels": 124042
+    },
+    "visual_review": {
+      "reviewed": [
+        "checkerboard-qa.png",
+        "light-dark-qa.png"
+      ],
+      "observed": "Visible character regions and props retained; source limits and residual overlays recorded above."
+    }
+  }
+}

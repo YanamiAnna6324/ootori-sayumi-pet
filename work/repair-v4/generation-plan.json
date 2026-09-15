@@ -1,0 +1,26 @@
+{
+  "pet": "Ootori Sayumi pet",
+  "status": "awaiting_image_generation_capability",
+  "canvas": {"columns": 8, "rows": 11, "cellWidth": 192, "cellHeight": 208},
+  "neutral": {"row": 0, "column": 6},
+  "canonicalReference": "微信图片_20260914205538_4_47.jpg",
+  "preserve": ["grey twin tails", "blue eyes", "pink Z-shaped hair clip", "chibi proportions", "original linework", "full visible silhouette"],
+  "exclude": ["scenery", "second character", "shipping box", "speech bubbles", "punctuation", "sticker borders", "floor shadow"],
+  "wideReferences": {"files": ["20260914205539_5_47", "20260914205540_6_47", "20260914205541_7_47", "20260914205542_8_47"], "role": "clothing and palette only"},
+  "jobs": [
+    {"id": "idle", "row": 0, "frames": 6, "reference": "20260914205538_4_47", "action": "calm breathing and blink, first frame preserves the original idle pose"},
+    {"id": "running-right", "row": 1, "frames": 8, "reference": "20260914205538_4_47", "action": "new right-facing alternating gait; preserve identity and clip side"},
+    {"id": "running-left", "row": 2, "frames": 8, "reference": "20260914205538_4_47", "action": "new left-facing alternating gait; do not reverse the asymmetric hair clip"},
+    {"id": "waving", "row": 3, "frames": 4, "reference": "20260914205827_13_47", "action": "use affectionate expression and pink outfit; complete the body, raise hand, wave and return"},
+    {"id": "jumping", "row": 4, "frames": 5, "reference": "20260914205828_14_47", "action": "gift celebration: anticipation, lift, peak, descent, settle; no speech bubble"},
+    {"id": "failed", "row": 5, "frames": 8, "reference": "20260914205823_10_47", "action": "left Sayumi only; surprised then deflated expression; no punctuation or boy"},
+    {"id": "waiting", "row": 6, "frames": 6, "reference": "20260914205826_12_47", "action": "expectant asking expression from the happy reference, head tilt and open hand"},
+    {"id": "running", "row": 7, "frames": 6, "reference": "20260914205825_11_47", "action": "focused tea preparation with cup, small hand and head movements; no locomotion"},
+    {"id": "review", "row": 8, "frames": 6, "reference": "20260914205825_11_47", "action": "attentive inspection: lean in and scrutinize cup, then return; distinguish from preparing tea"},
+    {"id": "look-cardinals", "frames": 4, "dependsOn": ["idle"], "directions": [0, 90, 180, 270], "action": "up, screen-right, down, screen-left; consistent idle outfit and body; coordinated head and eyes"},
+    {"id": "look-row-9", "row": 9, "frames": 8, "dependsOn": ["look-cardinals"], "directions": [0, 22.5, 45, 67.5, 90, 112.5, 135, 157.5]},
+    {"id": "look-row-10", "row": 10, "frames": 8, "dependsOn": ["look-cardinals", "look-row-9"], "directions": [180, 202.5, 225, 247.5, 270, 292.5, 315, 337.5]},
+    {"id": "eating", "frames": 6, "reference": ["20260914205822_9_47", "20260914205826_12_47"], "action": "mint ice cream: raise, taste, chew, happy expression, lower; complete body consistently", "runtime": "extra preview asset, not an additional native atlas row"},
+    {"id": "sleeping", "frames": 6, "reference": "20260914205538_4_47", "action": "eyes gently closed, relaxed seated sleeping pose, subtle breathing", "runtime": "extra preview asset, not an additional native atlas row"}
+  ]
+}

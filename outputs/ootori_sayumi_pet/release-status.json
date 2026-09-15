@@ -1,0 +1,13 @@
+{
+  "installable": false,
+  "stage": "reference_cutout_review",
+  "preview": "cutouts-v4/preview.html",
+  "cutoutReport": "cutouts-v4/extraction-report.json",
+  "blockers": [
+    "Several original images crop the body or hair; complete silhouettes need reference-guided reconstruction.",
+    "Punctuation, light rays and speech bubbles overlap character pixels in several sources.",
+    "Genuine standard animation loops and 16 semantic gaze poses have not been generated.",
+    "The rebuilt atlas has not passed both structural and independent visual QA."
+  ],
+  "legacyArtifacts": "Earlier atlases, state strips and QA reports are retained for debugging; they are not the rebuilt release."
+}
