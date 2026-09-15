@@ -1,11 +1,12 @@
 {
   "idle": "待机",
   "greeting": "问候/互动回应",
-  "happy": "开心",
+  "happy": "states_v2/happy.png",
   "shy": "害羞/期待",
-  "surprised": "惊讶/提醒",
-  "working": "思考/工作",
-  "eating": "专用进食动作条 eating.png",
+  "surprised": "states_v2/surprised.png",
+  "working": "states_v2/working.png",
+  "eating": "states_v2/eating.png",
   "sleeping": "专用睡眠动作条 sleeping.png",
-  "look-directions": "16方向朝向"
+  "look-directions": "16方向朝向",
+  "gift": "states_v2/gift.png"
 }
