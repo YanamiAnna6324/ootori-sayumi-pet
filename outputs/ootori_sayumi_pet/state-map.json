@@ -5,7 +5,7 @@
   "shy": "害羞/期待",
   "surprised": "惊讶/提醒",
   "working": "思考/工作",
-  "eating": "进食",
-  "sleeping": "睡眠",
+  "eating": "专用进食动作条 eating.png",
+  "sleeping": "专用睡眠动作条 sleeping.png",
   "look-directions": "16方向朝向"
 }
