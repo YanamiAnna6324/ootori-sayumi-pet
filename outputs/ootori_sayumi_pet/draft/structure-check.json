@@ -1,0 +1,19 @@
+{
+  "kind": "legacy_preview_draft",
+  "structural_checks_ok": true,
+  "size": [
+    1536,
+    2288
+  ],
+  "mode": "RGBA",
+  "used_cells_nonempty": true,
+  "unused_cells_transparent": true,
+  "neutral_added_from_idle": true,
+  "hidden_rgb_pixels": 0,
+  "existing_visible_pixels_preserved": true,
+  "lossless_roundtrip": true,
+  "source_sha256": "66492fb2fdebce031d573525cba0617f7a0f0e516c59701b3b62dc61c4bbb5a4",
+  "sha256": "5c469036d22bd3c5f3b7eca0c4401f516a8c124615a677d06b607064c6f330a1",
+  "visual_qa": "unfinished: static rows, cropped figures, overlapping decorations and incorrect gaze poses remain",
+  "final_release_ready": false
+}

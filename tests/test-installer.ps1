@@ -41,9 +41,9 @@ function New-Fixture([string]$Name) {
   }
 }
 
-function Invoke-ExpectedFailure($Fixture, [string]$MessagePattern) {
+function Invoke-ExpectedFailure($Fixture, [string]$MessagePattern, [switch]$RequireRelease) {
   $failure = $null
-  try { & $Fixture.Installer -Destination $Fixture.Destination | Out-Null }
+  try { & $Fixture.Installer -Destination $Fixture.Destination -RequireRelease:$RequireRelease | Out-Null }
   catch { $failure = $_.Exception.Message }
   Assert-True ($null -ne $failure -and $failure -match $MessagePattern) "Expected rejection matching: $MessagePattern; got: $failure"
 }
@@ -72,9 +72,31 @@ Assert-True (-not $hasBom) 'Installed manifest is UTF-8 without BOM.'
 # A rejected release must preserve an existing installation byte for byte.
 Write-Json (Join-Path $ok.Source 'release-status.json') @{ installable = $false }
 $manifestHash = (Get-FileHash -LiteralPath $installedManifestPath -Algorithm SHA256).Hash
-Invoke-ExpectedFailure $ok 'installable=false'
+Invoke-ExpectedFailure $ok 'installable=false' -RequireRelease
 Assert-True ((Get-FileHash -LiteralPath $installedManifestPath -Algorithm SHA256).Hash -ceq $manifestHash) 'Blocked release preserves the installed manifest.'
 Assert-True ((Get-FileHash -LiteralPath (Join-Path $ok.Destination 'spritesheet.webp') -Algorithm SHA256).Hash -ceq $installedHash) 'Blocked release preserves the installed WebP.'
+
+# The user's original no-switch command permits a clearly marked preview draft.
+$draftAtlas = Join-Path $ok.Source 'draft.webp'
+Copy-Item -LiteralPath (Join-Path $ok.Source 'custom-atlas.webp') -Destination $draftAtlas
+Write-Json (Join-Path $ok.Source 'release-status.json') @{ installable = $false; draftSpritesheetPath = 'draft.webp' }
+$ok.Manifest.spritesheetPath = 'not-used-for-draft.webp'
+Write-Json (Join-Path $ok.Source 'pet.json') $ok.Manifest
+$warnings = @()
+& $ok.Installer -Destination $ok.Destination -WarningVariable warnings -WarningAction SilentlyContinue | Out-Null
+$draftManifest = Get-Content -LiteralPath $installedManifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
+Assert-True ($warnings.Count -gt 0) 'Draft install reports unfinished animation.'
+Assert-True ($draftManifest.description -match 'Preview draft') 'Installed draft manifest is clearly marked.'
+Assert-True ((Get-FileHash -LiteralPath (Join-Path $ok.Destination 'spritesheet.webp')).Hash -ceq (Get-FileHash -LiteralPath $draftAtlas).Hash) 'Draft path from release status is installed.'
+$backupDirectories = @(Get-ChildItem -LiteralPath (Join-Path $ok.Destination 'backups') -Directory)
+Assert-True ($backupDirectories.Count -eq 1) 'Previous installation gets one backup directory.'
+Assert-True ((Get-FileHash -LiteralPath (Join-Path $backupDirectories[0].FullName 'pet.json')).Hash -ceq $manifestHash) 'Backup preserves previous manifest bytes.'
+Assert-True ((Get-FileHash -LiteralPath (Join-Path $backupDirectories[0].FullName 'spritesheet.webp')).Hash -ceq $installedHash) 'Backup preserves previous spritesheet bytes.'
+
+$draftEscape = New-Fixture 'draft-path-escape'
+Write-Json (Join-Path $draftEscape.Source 'release-status.json') @{ installable = $false; draftSpritesheetPath = '..\outside.webp' }
+Invoke-ExpectedFailure $draftEscape 'stay inside'
+Assert-True (-not (Test-Path -LiteralPath $draftEscape.Destination)) 'Draft paths use the same package path checks.'
 
 $missingAtlas = New-Fixture 'missing-atlas'
 $missingAtlas.Manifest.spritesheetPath = 'missing.webp'

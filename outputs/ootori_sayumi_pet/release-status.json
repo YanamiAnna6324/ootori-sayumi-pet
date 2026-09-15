@@ -1,5 +1,7 @@
 {
   "installable": false,
+  "draftSpritesheetPath": "draft/spritesheet.webp",
+  "draftNote": "Existing preview draft with neutral slot and hidden RGB repaired; full visual acceptance is still pending.",
   "stage": "reference_cutout_review",
   "preview": "cutouts-v4/preview.html",
   "cutoutReport": "cutouts-v4/extraction-report.json",

@@ -18,7 +18,17 @@
 
 ## 安装器
 
-`install-pet.ps1` 已修复 PowerShell 语法，读取源清单，支持 `-Destination`，以 UTF-8 无 BOM 写入安装清单。`release-status.json` 当前标为不可安装，因此它会保留现有客户端宠物并提示重做包未就绪。通过结构和视觉验收后才能更新发布状态。
+原来的命令现在可以试装草稿：
+
+```powershell
+.\install-pet.ps1
+```
+
+脚本默认安装 `draft/spritesheet.webp`，自动备份现有 `pet.json` 和 `spritesheet.webp` 到安装目录的 `backups/` 子目录，并提示完整动画尚未完成。草稿只修复 neutral 默认帧和全透明像素 RGB 残留，已有动作和外观仍是旧稿，不代表最新抠图已变成完整动画。
+
+默认目标为 `$env:USERPROFILE\.codex\pets\ootori-sayumi-pet`，支持 `-Destination` 自定义位置。安装后重启客户端，在宠物选择器中选择 **Ootori Sayumi pet**。
+
+只允许安装验收成品时可运行 `.\install-pet.ps1 -RequireRelease`。当前 `installable=false` 仍保留成品未就绪的状态；该严格模式会拒绝安装并保留现有文件。
 
 安装器验证：
 
