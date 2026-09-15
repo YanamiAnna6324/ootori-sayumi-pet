@@ -1,4 +1,4 @@
-# Hinata Pet Draft
+# Ootori Sayumi pet Draft
 
 Based on the primary reference image. Codex v2 atlas: 1536x2288, 192x208 cells, 8x11 rows.
 

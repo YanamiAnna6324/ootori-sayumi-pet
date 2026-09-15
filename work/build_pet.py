@@ -3,7 +3,7 @@ from pathlib import Path
 from collections import deque
 import json, math
 ROOT=Path(r'C:\Users\HP\Documents\Codex\2026-09-14\hatch-pet-c-users-hp-codex')
-OUT=ROOT/'outputs'/'hinata_pet'; OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'outputs'/'ootori_sayumi_pet'; OUT.mkdir(parents=True,exist_ok=True)
 SRC=Path(r'C:\Users\HP\Downloads\codex宠物\微信图片_20260914205538_4_47.jpg')
 img=Image.open(SRC).convert('RGBA'); px=img.load(); q=deque(); seen=set()
 for x in range(img.width): q.extend([(x,0),(x,img.height-1)])
@@ -36,6 +36,6 @@ for row,n in rows:
 atlas=Image.new('RGBA',(W*8,H*11),(0,255,0,0))
 for ri,(row,n) in enumerate(rows): atlas.alpha_composite(Image.open(dec/f'{row}.png'),(0,ri*H))
 atlas.save(OUT/'spritesheet-extended.png'); atlas.save(OUT/'spritesheet-extended.webp','WEBP',lossless=True,quality=100); atlas.save(OUT/'contact-sheet-extended.png')
-pet={'id':'hinata-companion','displayName':'Hinata','description':'A gentle chibi twin-tail companion with blue eyes, soft encouragement, and playful snack breaks.','spriteVersionNumber':2,'spritesheetPath':'spritesheet-extended.webp'}
+pet={'id':'ootori-sayumi-pet','displayName':'Ootori Sayumi pet','description':'A gentle chibi twin-tail companion with blue eyes, soft encouragement, and playful snack breaks.','spriteVersionNumber':2,'spritesheetPath':'spritesheet-extended.webp'}
 (OUT/'pet.json').write_text(json.dumps(pet,ensure_ascii=False,indent=2),encoding='utf-8')
 (OUT/'state-map.json').write_text(json.dumps({'idle':'待机','greeting':'问候/互动回应','happy':'开心','shy':'害羞/期待','surprised':'惊讶/提醒','working':'思考/工作','eating':'进食','sleeping':'睡眠','look-directions':'16方向朝向'},ensure_ascii=False,indent=2),encoding='utf-8')
