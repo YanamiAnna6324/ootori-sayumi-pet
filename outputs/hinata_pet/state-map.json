@@ -1,0 +1,11 @@
+{
+  "idle": "待机",
+  "greeting": "问候/互动回应",
+  "happy": "开心",
+  "shy": "害羞/期待",
+  "surprised": "惊讶/提醒",
+  "working": "思考/工作",
+  "eating": "进食",
+  "sleeping": "睡眠",
+  "look-directions": "16方向朝向"
+}
