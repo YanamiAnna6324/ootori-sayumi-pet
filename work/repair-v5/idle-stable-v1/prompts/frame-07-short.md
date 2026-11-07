@@ -1,0 +1,1 @@
+Edit this exact Sayumi image for one quiet idle frame. Change ONLY the eyes and tiny closed smile: both blue eyes fully open, subtly attentive original gaze. Preserve the exact head position, face shape, hair, hair clip, body, hands, skirt, short crossed legs, feet, scale and framing. No body movement or redesign. One complete character; no text, props, shadow or effects.

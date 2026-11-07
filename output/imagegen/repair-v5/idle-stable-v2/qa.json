@@ -1,0 +1,550 @@
+{
+  "ok": true,
+  "kind": "stable_idle_facial_preview",
+  "created_at": "2026-11-07T10:58:34.682665+00:00",
+  "native_pet_package": false,
+  "visual_qa": "pending independent review; hashes cannot verify correct eyelids or natural expression",
+  "errors": [],
+  "warnings": [
+    "First preview intentionally has no sway; complete body and hair retain original pixels."
+  ],
+  "canonical": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v2\\canonical.png",
+  "canonical_sha256": "e2fb097dfdd50bf82e1c1789e51fab40ba6eb476f40b23fd3e791e63ddcb4cd2",
+  "mask": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v2\\face-mask.png",
+  "mask_sha256": "fd0421ca6b9d066543055d0b9125414adb0902b3e0d5f2fff0839cb9acf17a9b",
+  "editable_bbox": [
+    313,
+    343,
+    625,
+    557
+  ],
+  "mask_semantics": "weight=255-mask_alpha; supplied feathering used unchanged; generated RGB only; canonical alpha exact",
+  "generation_plan": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v2\\generation-plan.json",
+  "generation_plan_sha256": "cbb7351eb2f4ea9ba6882877661c3fa7789dec22f47698e0f51e8edfddb1366e",
+  "source_art": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\references\\idle-cutout.png",
+  "source_shared_transform": {
+    "scale": 2,
+    "offset": [
+      78,
+      76
+    ],
+    "canvas": [
+      1024,
+      1024
+    ]
+  },
+  "assembly": {
+    "method": "canonical body preserved pixel-for-pixel, genuine generated expression RGB composited only through supplied face mask",
+    "face_art_drawn_by_script": false,
+    "per_frame_registration": false,
+    "per_frame_bbox_fit": false,
+    "per_frame_full_resolution_resize": false,
+    "extra_mask_feathering": false,
+    "sway_px": 0,
+    "full_size": [
+      1024,
+      1024
+    ],
+    "native_size": [
+      192,
+      208
+    ],
+    "native_transform": {
+      "scale": 0.1875,
+      "offset": [
+        0,
+        8
+      ],
+      "resampler": "LANCZOS"
+    },
+    "preview_transform": {
+      "scale": 0.5,
+      "resampler": "LANCZOS"
+    },
+    "lower_body_fixed_from_y": 700,
+    "native_lower_body_fixed_from_y": 140,
+    "script": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\assemble_stable_idle.py",
+    "script_sha256": "32dbff889f1bffc234ec7347646590c29e4a6f83498e10484fe82fbc43cfff45"
+  },
+  "checks": {
+    "eight_input_files": true,
+    "distinct_generated_input_hashes": 8,
+    "distinct_facial_frame_hashes": 8,
+    "outside_face_exact_in_all_frames": true,
+    "lower_body_exact_in_all_frames": true,
+    "native_lower_body_exact_in_all_frames": true,
+    "silhouette_and_bbox_equal_in_all_frames": true,
+    "foot_baseline_equal_in_all_frames": true,
+    "native_bbox_equal_in_all_frames": true
+  },
+  "durations_ms": [
+    480,
+    160,
+    120,
+    100,
+    120,
+    160,
+    240,
+    520
+  ],
+  "total_duration_ms": 1900,
+  "frames": [
+    {
+      "index": 1,
+      "expression": "Both eyes fully open, original relaxed blue-eyed gaze; tiny closed gentle smile. Neutral entry pose.",
+      "duration_ms": 480,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-01.png",
+      "generated_source_sha256": "e15e0ccb6b2cdbe0db392fa7c2eed7ae7dcf61407d4b1e35884445681cc8242f",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame01-short.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-01.png",
+      "processed_sha256": "7cfac7430a989b1e332f6fb8a56a6b806716b121ec1045032c808dc54c7df25e",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-01.png",
+      "native_sha256": "6985422e5339ebdf4a22d84528daf887b3238171d092c5bcda9e23c539b0f0b5",
+      "face_sha256": "d542bfa5266cf8097789b2e63dc37bc2920547bd87c84ebb1a5a1a7b341203e0",
+      "generated_face_sha256": "2ca6cd6aa1f44abfc9708e0a3f9bbb6735fce7f1250d3064b9d8a8f3c46acbf7",
+      "face_changed_pixels_from_canonical": 30974,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "8688eca9546c4268f3d19c60f1c812c98345a0a757669049c46491ed9d2fca58"
+    },
+    {
+      "index": 2,
+      "expression": "Both upper eyelids lowered by about 10 percent; blue irises remain visible, same gentle closed smile.",
+      "duration_ms": 160,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-02.png",
+      "generated_source_sha256": "676fa4bf50691e0ddc6fd0e4fdd44c14c7d8715b1bab8f5e2a69910caf546a75",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame02-short.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-02.png",
+      "processed_sha256": "a82ea2b702ff1a3835006fad916edf6e4a413853103f36638eac0e060d40d346",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-02.png",
+      "native_sha256": "2d922504d128f7ecfa11d71aa289450f56566d87c44aed41d60c340482f513a2",
+      "face_sha256": "73996fba5272a6e999487918ec81424c26510006041e526fc638f2ea5d95415e",
+      "generated_face_sha256": "c80ca8bf82fd499017451cd5bbff47d63e35e380a3eea2240e313e9eced086e9",
+      "face_changed_pixels_from_canonical": 31092,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "56f53928bdd3a872c3b74462aec5090ab3414aa52ebfecd73c55a4a172dd062d"
+    },
+    {
+      "index": 3,
+      "expression": "Beginning a natural blink: both eyelids half closed; lower eyelids and all eye corners stay anchored.",
+      "duration_ms": 120,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-03.png",
+      "generated_source_sha256": "01104780af2ffae2b0fdfef33daa060a9adfd57f77fc728f83eb247581440f7a",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-03.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-03.png",
+      "processed_sha256": "ab423ea763075234d65146941e22c436a4a299c34b751023b9422a845bd07616",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-03.png",
+      "native_sha256": "1648a396a2eb04dff2852ee6671758138ad05064e515f24725b845659a19e704",
+      "face_sha256": "7e9c70e8800bded77191fe87fb76d7941e4c417d0a591bb59943f6e53756bf8c",
+      "generated_face_sha256": "c1204e520a850053e3f7818040368b4d37d97799f54ddece57f3504b5a3b4e3f",
+      "face_changed_pixels_from_canonical": 30963,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "21ea3923de20878a31d626cdabe783b61624f5004b453a61d13e05c4a5a7178c"
+    },
+    {
+      "index": 4,
+      "expression": "Blink at its deepest point: both eyes fully closed as soft curved eyelid lines; tiny contented closed smile.",
+      "duration_ms": 100,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-04.png",
+      "generated_source_sha256": "48cd0ed04d551b43e405e758cf4c152ee80c56df70b8ae69bf8011dac96494d5",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-04.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-04.png",
+      "processed_sha256": "a20badc8227a8d7101b8d5c93284c60bed962b847bed3f9620e54448740c7726",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-04.png",
+      "native_sha256": "a6d2f84bc0bce4c6b01ad4000b3c6caefdb318ef85267cfce34045e17526e33c",
+      "face_sha256": "a161f51599e7370fdf29238d906950fb4fed02a6eb2c7ba152c750d00b603c85",
+      "generated_face_sha256": "a9bd76482cdd49e701cf60bfa12d161a0f99079bb93b698c201858cf6ace96c9",
+      "face_changed_pixels_from_canonical": 31145,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "e4252529f2a30a5666f3f29472fb6518c1e644c1b4fab788169a52f7c9b08f11"
+    },
+    {
+      "index": 5,
+      "expression": "Eyes just reopening: both eyelids about 35 percent open; blue irises partially visible, soft relaxed smile.",
+      "duration_ms": 120,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-05.png",
+      "generated_source_sha256": "72688b2ceceecb6f3b60253fbcbc3b69feb3bec54ec7acec137106486e35aecd",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-05.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-05.png",
+      "processed_sha256": "ccf8e8d6b2be58977a93ce8648250dd94f25eb9cafe27f4e35c039a6132d5c60",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-05.png",
+      "native_sha256": "d84b935eb94733d22d28d75d95625d91880780f723eff82e3cce5c219fa58999",
+      "face_sha256": "adaccfab9e4da44cf71e94780e4819bc860e923ea51ef562d6d415dd61b3b413",
+      "generated_face_sha256": "5bea495561ce42b53f5a191a940e6dea0439a228aa060acbcc5428b0a4359047",
+      "face_changed_pixels_from_canonical": 31188,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "5eaf92f6128e3c933538d6e26dabfbcf243ee4fa906cf2837e46c88d0e8d1f34"
+    },
+    {
+      "index": 6,
+      "expression": "Eyes reopened about 85 percent; tiny warm change at the mouth corners, no open talking mouth.",
+      "duration_ms": 160,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-06.png",
+      "generated_source_sha256": "eaf1ef87420b80ae45333cf5953d407055e0f747e183b0b8a1d2db608e41c607",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-06.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-06.png",
+      "processed_sha256": "dfc01862f4a604939752a52b2a7955b17280ae2497977a5ddbe0cb67335e599f",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-06.png",
+      "native_sha256": "5b4c16f89d1c285a6b2eb5d412ad1dc59903d88bdf8dddba99182c6be9c42a0e",
+      "face_sha256": "1bc9e80f6ce7aa4dcba383ea5a91787a69d77e06c8ad40944e410f31518bbb3f",
+      "generated_face_sha256": "ca872534d303c850aff85b4e76f6219a00578c1c4c694843541270aa1d0c6fe8",
+      "face_changed_pixels_from_canonical": 31177,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "b7b5ab5d06acf9629ec560a0d9a91e4f4494576e5e941c7823ccfd65ece13e27"
+    },
+    {
+      "index": 7,
+      "expression": "Both eyes fully open again; subtly attentive gaze, original mouth width and relaxed closed smile.",
+      "duration_ms": 240,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-07.png",
+      "generated_source_sha256": "3b104821f075d4d58ddf496a84d25faadba2ca148116021b30bea972d239ad1a",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-07-short.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-07.png",
+      "processed_sha256": "1348e7f335a1a515c72c27b42b47b5c9c1aa46e728c98af20b5c5b60f64cb2e5",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-07.png",
+      "native_sha256": "5c4350db4514b6fb161a69c89766a510dc1cafa40434b9c0d62f8beccadbebb7",
+      "face_sha256": "9db84598a0e1fd4222741e58a245f5246ede25d76bbf8df9054d5c93901cf8bf",
+      "generated_face_sha256": "715d7d32774af07645308791ff3fd5b5c07f917d77c0ce7190b38488468fcae3",
+      "face_changed_pixels_from_canonical": 30895,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "a028e23352d83a2cf42b2605bc61945c8a25e9a9a48e8fcb797422762d223959"
+    },
+    {
+      "index": 8,
+      "expression": "Both eyes fully open, returning to the exact initial relaxed gaze and gentle smile for a quiet loop.",
+      "duration_ms": 520,
+      "generated_source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-08.png",
+      "generated_source_sha256": "8f80ac0c92a67ff07cd9a50b6473109ecb32a1a5e2c3237e6ba37a2e73a40963",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_face_canvas_registration": {
+        "output_size": [
+          1024,
+          1024
+        ],
+        "method": "uniform full-canvas resampling only; no character bbox fitting"
+      },
+      "generation_status_in_plan": "generated",
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-08.md",
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\processed\\frame-08.png",
+      "processed_sha256": "eb658ab77ddaa5041d7ac7d072e5d2c018e8c7537b2626f36aea969d59a5c03a",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\frames-192\\frame-08.png",
+      "native_sha256": "1627287341bbb1bc069edf636b8b0d2cea11ae09bf5da3d06c784ff4410e2b1d",
+      "face_sha256": "0b50fa7d2ad4cee87b9e07ac90f29cc9c50c14a9945882e29e5e7454e5ec3a81",
+      "generated_face_sha256": "70a9115150cafdd6c2423dde5747a7371e177f8ee4589ca999a0aa7ae548617c",
+      "face_changed_pixels_from_canonical": 31197,
+      "outside_face_changed_pixels": 0,
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "alpha_exact": true,
+      "bbox": [
+        78,
+        76,
+        946,
+        980
+      ],
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "foot_baseline": 979,
+      "native_foot_baseline": 193,
+      "prompt_sha256": "9cada932a38bdeef8e6165ab2d48f100bfbb7c22d149ee870756f27ebac82600"
+    }
+  ],
+  "adjacent_face_differences_including_loop": [
+    {
+      "from": 1,
+      "to": 2,
+      "changed_face_pixels": 31041,
+      "face_bbox_mean_absolute_rgb_difference": 22.16895818356099
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "changed_face_pixels": 31050,
+      "face_bbox_mean_absolute_rgb_difference": 19.815720105439734
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "changed_face_pixels": 30870,
+      "face_bbox_mean_absolute_rgb_difference": 23.328156202572092
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "changed_face_pixels": 31241,
+      "face_bbox_mean_absolute_rgb_difference": 19.72241193386053
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "changed_face_pixels": 31040,
+      "face_bbox_mean_absolute_rgb_difference": 29.89718128444764
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "changed_face_pixels": 31173,
+      "face_bbox_mean_absolute_rgb_difference": 24.93399033469127
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "changed_face_pixels": 31197,
+      "face_bbox_mean_absolute_rgb_difference": 17.472986061186997
+    },
+    {
+      "from": 8,
+      "to": 1,
+      "changed_face_pixels": 31181,
+      "face_bbox_mean_absolute_rgb_difference": 13.651649492770987
+    }
+  ],
+  "animations": {
+    "webp": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\idle-stable-preview.webp",
+      "format": "WEBP",
+      "frames": 8,
+      "durations_ms": [
+        480,
+        160,
+        120,
+        100,
+        120,
+        160,
+        240,
+        520
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "59b0df2dd1fab461816e6498f3fec6a80ff0720ebc1ec7d5933d81c19ef81313"
+    },
+    "gif": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\idle-stable-preview.gif",
+      "format": "GIF",
+      "frames": 8,
+      "durations_ms": [
+        480,
+        160,
+        120,
+        100,
+        120,
+        160,
+        240,
+        520
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "de630e0bf85d4eaca3d203342565d6c71dc67002212c7dc1894410eaa841ecd4"
+    }
+  },
+  "contact_sheet": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\idle-stable-contact.png"
+}

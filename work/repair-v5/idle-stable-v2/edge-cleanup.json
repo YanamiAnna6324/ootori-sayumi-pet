@@ -1,0 +1,51 @@
+{
+  "source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\canonical.png",
+  "source_sha256": "fca0887aac4b31ca9050fd0b98f8bb065f3d28ec477a6723dd289944df5f4e33",
+  "candidate": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\edge-test\\alpha-trim4\\canonical-edge-cleaned.png",
+  "size": [
+    1024,
+    1024
+  ],
+  "method": "exterior-connected near-white RGB recolor from nearby darker inward donor",
+  "settings": {
+    "max_inward_depth_px": 12,
+    "minimum_rgb": 210,
+    "max_channel_spread": 35,
+    "exterior_alpha_max": 8,
+    "donor_radius": 12,
+    "trim_white_depth": 4
+  },
+  "selected_pixels": 22453,
+  "changed_pixels": 22453,
+  "changed_visible_alpha_gt16": 15148,
+  "selected_without_donor": 0,
+  "change_bbox": [
+    78,
+    76,
+    946,
+    980
+  ],
+  "alpha_unchanged": false,
+  "alpha_changed_pixels": 19367,
+  "alpha_mass_removed_fraction": 0.013462988326739433,
+  "source_alpha_bbox": [
+    78,
+    76,
+    946,
+    980
+  ],
+  "candidate_alpha_bbox": [
+    78,
+    76,
+    946,
+    980
+  ],
+  "canvas_unchanged": true,
+  "source_file_unchanged": true,
+  "unselected_rgb_unchanged": true,
+  "risks": [
+    "May darken true pale highlights where they touch the outer boundary within 12 pixels.",
+    "Optional alpha trim contracts only selected near-white exterior fringe; all frames must share this alpha mask.",
+    "Nearest inward donor can make some narrow outlines darker; inspect at normal pet size before adoption."
+  ]
+}

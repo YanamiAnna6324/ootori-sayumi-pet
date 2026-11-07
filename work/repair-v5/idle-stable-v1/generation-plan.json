@@ -1,0 +1,158 @@
+{
+  "name": "Ootori Sayumi pet",
+  "purpose": "source-preserving eight-frame idle repair",
+  "source": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\references\\idle-cutout.png",
+  "canonical": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\canonical.png",
+  "edit_target": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\edit-target.png",
+  "mask": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\face-mask.png",
+  "mask_semantics": "alpha0 editable, alpha255 protected; generated face RGB composited locally into canonical alpha",
+  "shared_transform": {
+    "scale": 2,
+    "offset": [
+      78,
+      76
+    ],
+    "canvas": [
+      1024,
+      1024
+    ]
+  },
+  "durations_ms": [
+    480,
+    160,
+    120,
+    100,
+    120,
+    160,
+    240,
+    520
+  ],
+  "sway_px": 0,
+  "lower_body_fixed_from_y": 700,
+  "packaging_eligible": false,
+  "generation_mode": "official imagegen CLI gpt-image-2 edit; each expression frame is separately model-generated, then composited through the local face mask",
+  "external_input_policy": "User explicitly authorized sending this derived edit-target image to TiMi CC for the remaining seven expression frames on 2026-11-07. Credentials remain process-only.",
+  "jobs": [
+    {
+      "index": 1,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame01-short.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-01.png",
+      "expression": "Both eyes fully open, original relaxed blue-eyed gaze; tiny closed gentle smile. Neutral entry pose.",
+      "duration_ms": 480,
+      "status": "generated",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ],
+      "generated_source_sha256": "e15e0ccb6b2cdbe0db392fa7c2eed7ae7dcf61407d4b1e35884445681cc8242f",
+      "qa_note": "Both blue eyes open with gentle closed smile; accepted short/high request.",
+      "selected_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame01-short.md",
+      "requested_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame01-short.md"
+    },
+    {
+      "index": 2,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame02-short.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-02.png",
+      "expression": "Both upper eyelids lowered by about 10 percent; blue irises remain visible, same gentle closed smile.",
+      "duration_ms": 160,
+      "status": "generated",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_source_sha256": "676fa4bf50691e0ddc6fd0e4fdd44c14c7d8715b1bab8f5e2a69910caf546a75",
+      "qa_note": "Blue eyes visible with upper lids lowered as partial blink onset.",
+      "selected_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame02-short.md",
+      "requested_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\candidates\\frame02-short.md"
+    },
+    {
+      "index": 3,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-03.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-03.png",
+      "expression": "Beginning a natural blink: both eyelids half closed; lower eyelids and all eye corners stay anchored.",
+      "duration_ms": 120,
+      "status": "generated",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ],
+      "generated_source_sha256": "01104780af2ffae2b0fdfef33daa060a9adfd57f77fc728f83eb247581440f7a",
+      "qa_note": "Both lids half lowered; blue irises visible."
+    },
+    {
+      "index": 4,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-04.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-04.png",
+      "expression": "Blink at its deepest point: both eyes fully closed as soft curved eyelid lines; tiny contented closed smile.",
+      "duration_ms": 100,
+      "status": "generated",
+      "selected_candidate": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\candidates\\neutral-request-closed.png",
+      "generated_source_sha256": "48cd0ed04d551b43e405e758cf4c152ee80c56df70b8ae69bf8011dac96494d5",
+      "qa_note": "Closed-eye candidate retained from first request and correctly reassigned after visual inspection.",
+      "generated_canvas_size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 5,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-05.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-05.png",
+      "expression": "Eyes just reopening: both eyelids about 35 percent open; blue irises partially visible, soft relaxed smile.",
+      "duration_ms": 120,
+      "status": "generated",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_source_sha256": "72688b2ceceecb6f3b60253fbcbc3b69feb3bec54ec7acec137106486e35aecd",
+      "qa_note": "Blue eyes about35-40%open."
+    },
+    {
+      "index": 6,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-06.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-06.png",
+      "expression": "Eyes reopened about 85 percent; tiny warm change at the mouth corners, no open talking mouth.",
+      "duration_ms": 160,
+      "status": "generated",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_source_sha256": "eaf1ef87420b80ae45333cf5953d407055e0f747e183b0b8a1d2db608e41c607",
+      "qa_note": "Blue eyes about85-90%open."
+    },
+    {
+      "index": 7,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-07-short.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-07.png",
+      "expression": "Both eyes fully open again; subtly attentive gaze, original mouth width and relaxed closed smile.",
+      "duration_ms": 240,
+      "status": "generated",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_source_sha256": "3b104821f075d4d58ddf496a84d25faadba2ca148116021b30bea972d239ad1a",
+      "qa_note": "Both blue eyes open, attentive gaze.",
+      "selected_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-07-short.md",
+      "requested_prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-07-short.md"
+    },
+    {
+      "index": 8,
+      "prompt_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v1\\prompts\\frame-08.md",
+      "output_file": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v1\\raw\\frame-08.png",
+      "expression": "Both eyes fully open, returning to the exact initial relaxed gaze and gentle smile for a quiet loop.",
+      "duration_ms": 520,
+      "status": "generated",
+      "generated_canvas_size": [
+        1254,
+        1254
+      ],
+      "generated_source_sha256": "8f80ac0c92a67ff07cd9a50b6473109ecb32a1a5e2c3237e6ba37a2e73a40963",
+      "qa_note": "Both blue eyes fully open with gentle closed smile."
+    }
+  ],
+  "status": "all eight source frames generated; awaiting local composite and visual QA",
+  "canvas_registration_policy": "Preserve raw original files; resample generated facial input by full canvas only when provider ignores requested1024 output size; final body is always original canonical pixels."
+}

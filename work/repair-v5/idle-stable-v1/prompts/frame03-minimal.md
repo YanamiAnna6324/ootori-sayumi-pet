@@ -1,0 +1,1 @@
+Edit only the facial expression: both blue eyes half-closed, upper eyelids halfway down, blue irises still visible; same tiny closed smile. Preserve the exact head position, face shape, hair, costume, hands, body, short crossed legs, feet, scale and framing. Everything else unchanged. One character; no new props, text, shadows or effects.

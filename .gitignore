@@ -1,0 +1,15 @@
+# Local image-generation dependencies; keep the installed runtime for debugging.
+/work/imagegen-runtime/
+/work/imagegen-runtime-current/
+/work/imagegen-runtime-local/
+/work/__pycache__/
+
+# Preserve source artwork and generated intermediates locally for debugging.
+/work/repair-v5/references/
+/work/repair-v5/idle-stable-v*/canonical*.png
+/work/repair-v5/idle-stable-v*/edit-target.png
+/work/repair-v5/idle-stable-v*/face-mask.png
+/work/repair-v5/idle-stable-v*/mask-overlay.png
+/output/imagegen/repair-v5/idle-stable-v*/raw/
+/output/imagegen/repair-v5/idle-stable-v*/processed/
+/output/imagegen/repair-v5/idle-stable-v*/gentle-sway/processed/

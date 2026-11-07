@@ -1,0 +1,56 @@
+{
+  "kind": "stable_idle_preview_final_review",
+  "date": "2026-11-07",
+  "preview_complete": true,
+  "preview_verdict": "pass_with_minor_edge_warning",
+  "native_pet_package": false,
+  "packaging_eligible": false,
+  "independent_reviewers": ["base_generation", "repo_audit", "imagegen_runtime"],
+  "baseline_deterministic_qa": "qa.json",
+  "sway_deterministic_qa": "gentle-sway/qa.json",
+  "cleanup": {
+    "candidate": "shared alpha-trim4 canonical",
+    "report": "edge-cleanup.json",
+    "comparison": "edge-before-after.png",
+    "applied_consistently_to_all_eight_frames": true,
+    "compared_with_cleaned_canonical": true,
+    "original_alpha_preserved": false,
+    "no_per_frame_bbox_fit_or_body_resize": true,
+    "face_edit_support_unchanged_by_cleanup": true,
+    "independent_verdict": "accepted for preview with minor edge warning"
+  },
+  "visual_observations": [
+    "Coherent open, lowered-eyelid, half-blink, closed, reopening, open expression sequence at native size.",
+    "Original short crossed legs, body proportions and foot baseline remain stable.",
+    "No visible facial seam, clipping, square backdrop or geometry damage in the final contact sheets.",
+    "Only tiny upper-body sway; no vertical movement, rotation or body scale animation."
+  ],
+  "encoded_audit": {
+    "verdict": "pass",
+    "webp_frame_counts": [8, 8, 8],
+    "durations_ms": [480, 160, 120, 100, 120, 160, 240, 520],
+    "total_duration_ms": 1900,
+    "loop": 0,
+    "all_decoded_frames_match_source_alpha_and_visible_rgb": true,
+    "encoded_lower_body_changed_pixels": 0,
+    "native_dimensions": [192, 208],
+    "native_bbox_in_every_frame": [12, 20, 180, 194],
+    "native_foot_baseline_in_every_frame": 193,
+    "corner_alpha": 0
+  },
+  "browser_validation": {
+    "preview_page_opened_in_codex_browser": true,
+    "loaded_animations": 3,
+    "expected_animations": 3,
+    "dark_background_control_verified": true,
+    "native_192x208_animation_display_inspected": true,
+    "timeline_verified_by_independent_encoded_audit": true
+  },
+  "accepted_warnings": [
+    "A very thin pale residual and slight jagged texture remain in enlarged hair-edge views; do not claim perfect edges."
+  ],
+  "release_blockers": [
+    "This delivery completes only the eight-frame idle preview, not the full 8x11 Codex pet atlas.",
+    "Other genuine action loops and 16 semantic gaze directions still need generation and full structural and independent visual acceptance."
+  ]
+}

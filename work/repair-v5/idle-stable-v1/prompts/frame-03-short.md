@@ -1,0 +1,1 @@
+Edit only the facial expression in this exact image. Both blue eyes halfway closed in a natural blink, blue iris visible below lowered upper lids. Tiny closed smile. Preserve eye corners and exact head position. Keep all hair, clothes, hands, short crossed legs and feet unchanged. Same full canvas and flat green background. One image, no collage or text.

@@ -1,0 +1,10 @@
+# Preserve exact source bytes: provenance SHA256 values include line endings.
+/work/assemble_stable_idle.py -text
+/work/prepare_stable_idle.py -text
+/work/render_stable_idle_sway.py -text
+/work/clean_idle_fringe.py -text
+/work/prepare_clean_idle.py -text
+/work/repair-v5/idle-stable-v*/**/*.json -text
+/work/repair-v5/idle-stable-v*/**/*.md -text
+/output/imagegen/repair-v5/idle-stable-v*/**/*.json -text
+/output/imagegen/repair-v5/idle-stable-v*/**/*.html -text

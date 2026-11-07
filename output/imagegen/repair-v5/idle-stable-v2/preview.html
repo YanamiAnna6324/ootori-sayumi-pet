@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ootori Sayumi pet · 稳定待机</title>
+<style>
+  :root { color-scheme: light; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; color: #253044; background: #f3f4f8; }
+  body { max-width: 1000px; margin: 28px auto; padding: 0 22px 36px; }
+  h1 { font-size: 25px; margin-bottom: 8px; }
+  p { color: #596579; line-height: 1.7; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; align-items: center; }
+  button { font: inherit; padding: 8px 14px; background: white; color: #253044; border: 1px solid #ccd1dc; border-radius: 8px; cursor: pointer; }
+  button[aria-pressed="true"] { background: #e4e9fc; border-color: #7e91cf; }
+  .grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+  article { border: 1px solid #dce0e8; background: white; border-radius: 14px; overflow: hidden; }
+  h2 { font-size: 17px; margin: 18px 20px 6px; }
+  article p { margin: 0 20px 14px; font-size: 13px; }
+  .stage { display: flex; align-items: center; justify-content: center; min-height: 400px; background-color: #f8f8fa; background-image: conic-gradient(#e4e6ed 25%,transparent 0 50%,#e4e6ed 0 75%,transparent 0); background-size: 32px 32px; }
+  .stage img { width: min(100%,384px); height: auto; }
+  .native { margin-top: 18px; }
+  .native .stage { min-height: 240px; }
+  .native .stage img { width: 192px; height: 208px; }
+  .caption { font-size: 13px; margin-top: 22px; }
+  .white .stage { background: #fff; }
+  .dark .stage { background: #252a36; }
+  a { color: #435fbc; }
+  #status { font-size: 12px; color: #65718a; margin-left: 8px; }
+  @media(max-width:680px) { .grid { grid-template-columns: 1fr; } body { margin-top: 18px; } }
+</style>
+<h1>Ootori Sayumi pet · 稳定待机</h1>
+<p>8 帧表情循环，约 1.9 秒。保留原始身体和短腿比例；右侧仅加入极轻的上半身晃动。</p>
+<p>已统一减轻轮廓白边。放大后发梢仍有少量浅边和锯齿，可切换深色背景检查。</p>
+<div class="toolbar" role="group" aria-label="预览背景">
+  <button data-bg="checker" aria-pressed="true">棋盘背景</button>
+  <button data-bg="white" aria-pressed="false">浅色背景</button>
+  <button data-bg="dark" aria-pressed="false">深色背景</button>
+  <span id="status" role="status">正在加载动画…</span>
+</div>
+<div class="grid">
+  <article>
+    <h2>固定身体 · 表情变化</h2>
+    <p>睁眼 → 眨眼 → 闭眼 → 睁眼</p>
+    <div class="stage"><img src="idle-stable-preview.webp" alt="固定身体的八帧待机动画" width="512" height="512"></div>
+  </article>
+  <article>
+    <h2>表情变化 · 轻微晃动</h2>
+    <p>脚部保持固定，上半身仅轻微左右晃动</p>
+    <div class="stage"><img src="gentle-sway/idle-gentle-sway.webp" alt="加入轻微晃动的八帧待机动画" width="512" height="512"></div>
+  </article>
+</div>
+<article class="native">
+  <h2>实际宠物帧尺寸 · 192 × 208</h2>
+  <p>在这个尺寸检查表情、透明边缘和身体比例。</p>
+  <div class="stage"><img src="gentle-sway/idle-gentle-sway-192.webp" alt="192乘208尺寸的稳定待机动画" width="192" height="208"></div>
+</article>
+<p class="caption">本页展示本次待机动画预览。完整宠物包的其他动作和视线仍在制作中。<br>
+  <a href="gentle-sway/idle-gentle-sway.webp">打开透明 WebP</a> ·
+  <a href="idle-stable-preview.gif">打开固定身体 GIF</a> ·
+  <a href="gentle-sway/idle-gentle-sway-contact.png">查看全部 8 帧</a>
+  · <a href="edge-before-after.png">查看轮廓清理前后</a>
+</p>
+<script>
+  const images = [...document.images];
+  const status = document.querySelector('#status');
+  function loaded() {
+    const failures = images.filter(image => image.complete && !image.naturalWidth);
+    const count = images.filter(image => image.complete && image.naturalWidth).length;
+    status.textContent = failures.length ? '有动画未能加载，请检查文件是否齐全。' : `${count} / ${images.length} 个动画已加载`;
+  }
+  for (const image of images) { image.addEventListener('load', loaded); image.addEventListener('error', loaded); }
+  loaded();
+  for (const button of document.querySelectorAll('[data-bg]')) {
+    button.addEventListener('click', () => {
+      document.body.className = button.dataset.bg;
+      for (const item of document.querySelectorAll('[data-bg]')) item.setAttribute('aria-pressed', String(item === button));
+    });
+  }
+</script>
+</html>
