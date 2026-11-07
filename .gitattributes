@@ -4,6 +4,7 @@
 /work/render_stable_idle_sway.py -text
 /work/clean_idle_fringe.py -text
 /work/prepare_clean_idle.py -text
+/work/close_idle_loop.py -text
 /work/repair-v5/idle-stable-v*/**/*.json -text
 /work/repair-v5/idle-stable-v*/**/*.md -text
 /output/imagegen/repair-v5/idle-stable-v*/**/*.json -text

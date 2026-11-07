@@ -1,0 +1,833 @@
+{
+  "ok": true,
+  "kind": "seamless_blink_playback_repair",
+  "native_pet_package": false,
+  "errors": [],
+  "input_qa": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v2\\qa.json",
+  "input_qa_sha256": "b226257d206dd90042064671e053a3e3de0ebc48345946ade33143fb49d7a4d6",
+  "canonical": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\repair-v5\\idle-stable-v2\\canonical.png",
+  "canonical_sha256": "e2fb097dfdd50bf82e1c1789e51fab40ba6eb476f40b23fd3e791e63ddcb4cd2",
+  "script": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\work\\close_idle_loop.py",
+  "script_sha256": "e51bd5719ca7d7a567a8bcdf275d63daa1e385cd7b86937ac22b8af6da69248f",
+  "new_artwork_generated": false,
+  "source_frame_map": [
+    1,
+    2,
+    3,
+    4,
+    3,
+    2,
+    1,
+    1
+  ],
+  "durations_ms": [
+    480,
+    100,
+    70,
+    100,
+    70,
+    100,
+    460,
+    520
+  ],
+  "total_duration_ms": 1900,
+  "checks": {
+    "logical_slots": 8,
+    "intentional_pose_reuse": true,
+    "source_frame_map": [
+      1,
+      2,
+      3,
+      4,
+      3,
+      2,
+      1,
+      1
+    ],
+    "distinct_source_poses_used": 4,
+    "fixed_endpoint_changed_pixels": 0,
+    "sway_endpoint_changed_pixels": 0,
+    "native_sway_endpoint_changed_pixels": 0,
+    "fixed_blink_retrace_pairs_changed_pixels": [
+      0,
+      0,
+      0
+    ],
+    "all_legs_fixed": true,
+    "native_foot_baselines": [
+      193
+    ],
+    "all_encoded_timelines_match": true,
+    "all_animations_loop_forever": true,
+    "all_durations_match": true
+  },
+  "motion": {
+    "period_ms": 1900,
+    "phase_offset_radians": -4.679319584031113,
+    "requested_amplitude_px": 1.5,
+    "analytic_maximum_displacement_px": 1.2381693588015596,
+    "maximum_sampled_displacement_px": 1.2051431688190672,
+    "neighbor_displacement_deltas_px_including_loop": [
+      1.102690356298551,
+      0.32520241142939266,
+      0.2789464210907475,
+      0.2107951875869135,
+      0.12609808168141878,
+      0.2537324580870238,
+      1.7899999999999996,
+      0.0
+    ],
+    "maximum_neighbor_displacement_delta_px": 1.7899999999999996,
+    "last_to_first_displacement_delta_px": 0.0,
+    "time_function": "A*sin(2*pi*t/period+phase_offset), sampled at cumulative frame centers"
+  },
+  "motion_records": [
+    {
+      "index": 1,
+      "duration_ms": 480,
+      "frame_center_ms": 240.0,
+      "phase_radians": -3.8856540715452703,
+      "horizontal_displacement_px": 0.8385892892679562,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 2,
+      "duration_ms": 100,
+      "frame_center_ms": 530.0,
+      "phase_radians": -2.926641577291544,
+      "horizontal_displacement_px": -0.26410106703059477,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 3,
+      "duration_ms": 70,
+      "frame_center_ms": 615.0,
+      "phase_radians": -2.6455517082861415,
+      "horizontal_displacement_px": -0.5893034784599874,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 4,
+      "duration_ms": 100,
+      "frame_center_ms": 700.0,
+      "phase_radians": -2.364461839280739,
+      "horizontal_displacement_px": -0.868249899550735,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 5,
+      "duration_ms": 70,
+      "frame_center_ms": 785.0,
+      "phase_radians": -2.083371970275336,
+      "horizontal_displacement_px": -1.0790450871376485,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 6,
+      "duration_ms": 100,
+      "frame_center_ms": 870.0,
+      "phase_radians": -1.8022821012699337,
+      "horizontal_displacement_px": -1.2051431688190672,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 7,
+      "duration_ms": 460,
+      "frame_center_ms": 1150.0,
+      "phase_radians": -0.8763390033697847,
+      "horizontal_displacement_px": -0.9514107107320434,
+      "vertical_displacement_px": 0
+    },
+    {
+      "index": 8,
+      "duration_ms": 520,
+      "frame_center_ms": 1640.0,
+      "phase_radians": 0.7440614179554776,
+      "horizontal_displacement_px": 0.8385892892679562,
+      "vertical_displacement_px": 0
+    }
+  ],
+  "fixed_frames": [
+    {
+      "index": 1,
+      "source_frame": 1,
+      "duration_ms": 480,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-01.png",
+      "processed_sha256": "7cfac7430a989b1e332f6fb8a56a6b806716b121ec1045032c808dc54c7df25e",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-01.png",
+      "native_sha256": "6985422e5339ebdf4a22d84528daf887b3238171d092c5bcda9e23c539b0f0b5",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 2,
+      "source_frame": 2,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-02.png",
+      "processed_sha256": "a82ea2b702ff1a3835006fad916edf6e4a413853103f36638eac0e060d40d346",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-02.png",
+      "native_sha256": "2d922504d128f7ecfa11d71aa289450f56566d87c44aed41d60c340482f513a2",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 3,
+      "source_frame": 3,
+      "duration_ms": 70,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-03.png",
+      "processed_sha256": "ab423ea763075234d65146941e22c436a4a299c34b751023b9422a845bd07616",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-03.png",
+      "native_sha256": "1648a396a2eb04dff2852ee6671758138ad05064e515f24725b845659a19e704",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 4,
+      "source_frame": 4,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-04.png",
+      "processed_sha256": "a20badc8227a8d7101b8d5c93284c60bed962b847bed3f9620e54448740c7726",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-04.png",
+      "native_sha256": "a6d2f84bc0bce4c6b01ad4000b3c6caefdb318ef85267cfce34045e17526e33c",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 5,
+      "source_frame": 3,
+      "duration_ms": 70,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-05.png",
+      "processed_sha256": "ab423ea763075234d65146941e22c436a4a299c34b751023b9422a845bd07616",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-05.png",
+      "native_sha256": "1648a396a2eb04dff2852ee6671758138ad05064e515f24725b845659a19e704",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 6,
+      "source_frame": 2,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-06.png",
+      "processed_sha256": "a82ea2b702ff1a3835006fad916edf6e4a413853103f36638eac0e060d40d346",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-06.png",
+      "native_sha256": "2d922504d128f7ecfa11d71aa289450f56566d87c44aed41d60c340482f513a2",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 7,
+      "source_frame": 1,
+      "duration_ms": 460,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-07.png",
+      "processed_sha256": "7cfac7430a989b1e332f6fb8a56a6b806716b121ec1045032c808dc54c7df25e",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-07.png",
+      "native_sha256": "6985422e5339ebdf4a22d84528daf887b3238171d092c5bcda9e23c539b0f0b5",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 8,
+      "source_frame": 1,
+      "duration_ms": 520,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\processed\\frame-08.png",
+      "processed_sha256": "7cfac7430a989b1e332f6fb8a56a6b806716b121ec1045032c808dc54c7df25e",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\frames-192\\frame-08.png",
+      "native_sha256": "6985422e5339ebdf4a22d84528daf887b3238171d092c5bcda9e23c539b0f0b5",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    }
+  ],
+  "sway_frames": [
+    {
+      "index": 1,
+      "source_frame": 1,
+      "duration_ms": 480,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-01.png",
+      "processed_sha256": "535c95274666308ee5e9af50ab54aceaf6fb18f2dae2157589a3969106c99d5f",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-01.png",
+      "native_sha256": "1b92068579429fc194ad1ff2dbfd6c481027d7eb87103b0f1d72329d6f07e79b",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 2,
+      "source_frame": 2,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-02.png",
+      "processed_sha256": "9a32fb63f63b0bce6c772c70f4399c4e638c481bfaa8e9125f717f389dd6db64",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-02.png",
+      "native_sha256": "96027e941f887e21ad55d33b10ae14935f37878abb3df76e46275050b8794966",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 3,
+      "source_frame": 3,
+      "duration_ms": 70,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-03.png",
+      "processed_sha256": "f1eb321addf7b095dac767f815a908cbffeff05acb0f016006733681fff29df7",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-03.png",
+      "native_sha256": "c137d9e07dd971d6339e7aae9b22e23b2040339fae77ba07bad64adba16cece9",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 4,
+      "source_frame": 4,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-04.png",
+      "processed_sha256": "17c398c58808257375408b5e849dba121007dc0a0e90034c70761b981e2ba15c",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-04.png",
+      "native_sha256": "4c14dda3f972779b8eef61974becfa2100e7111b38186faa4c3b05d1152331fa",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 5,
+      "source_frame": 3,
+      "duration_ms": 70,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-05.png",
+      "processed_sha256": "940394291c0489354ee511bf30c790543dcbd8636695674c25d155b66fd77108",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-05.png",
+      "native_sha256": "7500cbf775503610d1c9e412e5c85909fdc3ab93fdd09e39cdd61dfb996f9452",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 6,
+      "source_frame": 2,
+      "duration_ms": 100,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-06.png",
+      "processed_sha256": "06abc0730dc1c379b072096534779c291c452ce17a6b5f2cab9f892064eb20b6",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-06.png",
+      "native_sha256": "b119886e2ce1d6b43f345f76ffafac819199d9090718003aecc0a8ed44cfa3c1",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 7,
+      "source_frame": 1,
+      "duration_ms": 460,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-07.png",
+      "processed_sha256": "07c96280eac91ec36ad5771c93d77be7c3d953849eab28fa49585e0ba49cf2c0",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-07.png",
+      "native_sha256": "547e7f50fffb6252f72f11650bb2f006190d3c102ad7639366ec108d0ee430c8",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    },
+    {
+      "index": 8,
+      "source_frame": 1,
+      "duration_ms": 520,
+      "processed": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\processed\\frame-08.png",
+      "processed_sha256": "535c95274666308ee5e9af50ab54aceaf6fb18f2dae2157589a3969106c99d5f",
+      "native_frame": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\frames-192\\frame-08.png",
+      "native_sha256": "1b92068579429fc194ad1ff2dbfd6c481027d7eb87103b0f1d72329d6f07e79b",
+      "lower_body_changed_pixels": 0,
+      "native_lower_body_changed_pixels": 0,
+      "native_bbox": [
+        12,
+        20,
+        180,
+        194
+      ],
+      "native_foot_baseline": 193
+    }
+  ],
+  "animations": {
+    "fixed_512": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\idle-stable-preview.webp",
+      "format": "WEBP",
+      "frames": 7,
+      "durations_ms": [
+        480,
+        100,
+        70,
+        100,
+        70,
+        100,
+        980
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "bfc6ad446fee2eae46b6823be10cc51777e8ef1a945059cd11e4f5978fe81254",
+      "timeline": {
+        "ok": true,
+        "errors": [],
+        "logical_slots_checked": 8,
+        "comparisons": [
+          {
+            "logical_slot": 1,
+            "encoded_frame": 1,
+            "overlap_ms": 480,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 2,
+            "encoded_frame": 2,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 3,
+            "encoded_frame": 3,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 4,
+            "encoded_frame": 4,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 5,
+            "encoded_frame": 5,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 6,
+            "encoded_frame": 6,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 7,
+            "encoded_frame": 7,
+            "overlap_ms": 460,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          },
+          {
+            "logical_slot": 8,
+            "encoded_frame": 7,
+            "overlap_ms": 520,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 37322
+          }
+        ],
+        "encoded_endpoint_difference": {
+          "alpha_changed_pixels": 0,
+          "visible_rgb_changed_pixels": 0,
+          "hidden_rgb_changed_pixels": 0
+        },
+        "first_last_encoded_visible_pixels_equal": true,
+        "total_duration_matches": true
+      }
+    },
+    "sway_512": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\idle-gentle-sway.webp",
+      "format": "WEBP",
+      "frames": 8,
+      "durations_ms": [
+        480,
+        100,
+        70,
+        100,
+        70,
+        100,
+        460,
+        520
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "bcc3e844573c0740910e9d52b4e3de4700fce02740c39781c4a97df37cd6a67b",
+      "timeline": {
+        "ok": true,
+        "errors": [],
+        "logical_slots_checked": 8,
+        "comparisons": [
+          {
+            "logical_slot": 1,
+            "encoded_frame": 1,
+            "overlap_ms": 480,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 21025
+          },
+          {
+            "logical_slot": 2,
+            "encoded_frame": 2,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 22909
+          },
+          {
+            "logical_slot": 3,
+            "encoded_frame": 3,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 22862
+          },
+          {
+            "logical_slot": 4,
+            "encoded_frame": 4,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 33308
+          },
+          {
+            "logical_slot": 5,
+            "encoded_frame": 5,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 33146
+          },
+          {
+            "logical_slot": 6,
+            "encoded_frame": 6,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 32748
+          },
+          {
+            "logical_slot": 7,
+            "encoded_frame": 7,
+            "overlap_ms": 460,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 33701
+          },
+          {
+            "logical_slot": 8,
+            "encoded_frame": 8,
+            "overlap_ms": 520,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 21503
+          }
+        ],
+        "encoded_endpoint_difference": {
+          "alpha_changed_pixels": 0,
+          "visible_rgb_changed_pixels": 0,
+          "hidden_rgb_changed_pixels": 1121
+        },
+        "first_last_encoded_visible_pixels_equal": true,
+        "total_duration_matches": true
+      }
+    },
+    "sway_native": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\gentle-sway\\idle-gentle-sway-192.webp",
+      "format": "WEBP",
+      "frames": 8,
+      "durations_ms": [
+        480,
+        100,
+        70,
+        100,
+        70,
+        100,
+        460,
+        520
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "76f6e10e65618dbf7d6cf35a9943d4818713e849c91fbb179ebcf7d881b3b478",
+      "timeline": {
+        "ok": true,
+        "errors": [],
+        "logical_slots_checked": 8,
+        "comparisons": [
+          {
+            "logical_slot": 1,
+            "encoded_frame": 1,
+            "overlap_ms": 480,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 6831
+          },
+          {
+            "logical_slot": 2,
+            "encoded_frame": 2,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 5632
+          },
+          {
+            "logical_slot": 3,
+            "encoded_frame": 3,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 5629
+          },
+          {
+            "logical_slot": 4,
+            "encoded_frame": 4,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 5462
+          },
+          {
+            "logical_slot": 5,
+            "encoded_frame": 5,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 7036
+          },
+          {
+            "logical_slot": 6,
+            "encoded_frame": 6,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 7247
+          },
+          {
+            "logical_slot": 7,
+            "encoded_frame": 7,
+            "overlap_ms": 460,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 5419
+          },
+          {
+            "logical_slot": 8,
+            "encoded_frame": 8,
+            "overlap_ms": 520,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 6831
+          }
+        ],
+        "encoded_endpoint_difference": {
+          "alpha_changed_pixels": 0,
+          "visible_rgb_changed_pixels": 0,
+          "hidden_rgb_changed_pixels": 0
+        },
+        "first_last_encoded_visible_pixels_equal": true,
+        "total_duration_matches": true
+      }
+    },
+    "fixed_gif": {
+      "path": "C:\\Users\\HP\\Documents\\Codex\\2026-09-14\\hatch-pet-c-users-hp-codex\\output\\imagegen\\repair-v5\\idle-stable-v5\\idle-stable-preview.gif",
+      "format": "GIF",
+      "frames": 7,
+      "durations_ms": [
+        480,
+        100,
+        70,
+        100,
+        70,
+        100,
+        980
+      ],
+      "total_duration_ms": 1900,
+      "loop": 0,
+      "sha256": "deb6a9a8eb8c604996e0fe4a24158dd25679c9e7c08ac8d9dab1a242cd8c4e7d",
+      "timeline": {
+        "ok": true,
+        "errors": [],
+        "logical_slots_checked": 8,
+        "comparisons": [
+          {
+            "logical_slot": 1,
+            "encoded_frame": 1,
+            "overlap_ms": 480,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 2,
+            "encoded_frame": 2,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 3,
+            "encoded_frame": 3,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 4,
+            "encoded_frame": 4,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 5,
+            "encoded_frame": 5,
+            "overlap_ms": 70,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 6,
+            "encoded_frame": 6,
+            "overlap_ms": 100,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 7,
+            "encoded_frame": 7,
+            "overlap_ms": 460,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          },
+          {
+            "logical_slot": 8,
+            "encoded_frame": 7,
+            "overlap_ms": 520,
+            "alpha_changed_pixels": 0,
+            "visible_rgb_changed_pixels": 0,
+            "hidden_rgb_changed_pixels": 0
+          }
+        ],
+        "encoded_endpoint_difference": {
+          "alpha_changed_pixels": 0,
+          "visible_rgb_changed_pixels": 0,
+          "hidden_rgb_changed_pixels": 0
+        },
+        "first_last_encoded_visible_pixels_equal": true,
+        "total_duration_matches": true
+      }
+    }
+  },
+  "notes": [
+    "User requested identical start/end eyes and a seamless repeating loop.",
+    "Closing poses are replayed in reverse for reopening; generated candidates 05..08 remain preserved in the previous version.",
+    "Equal adjacent holds may be merged by the encoder; eight logical PNG cells remain available.",
+    "Encoded playback requires exact alpha and RGB at every visible pixel; RGB changes under zero alpha are reported separately.",
+    "Independent visual acceptance is recorded separately in visual-review.json."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "seamless_idle_loop_visual_review",
+  "date": "2026-11-07",
+  "preview_complete": true,
+  "preview_verdict": "pass_with_minor_edge_warning",
+  "native_pet_package": false,
+  "packaging_eligible": false,
+  "visual_reviewers": [
+    "repo_audit",
+    "parent_contact_sheet_review"
+  ],
+  "visual_observations": [
+    "The first and eighth logical slots use the same open-eye pose; the blink closes and reopens through matching intermediate poses.",
+    "The original short crossed-leg pose and foot baseline remain aligned across all cells.",
+    "Optional sway is subtle and closes at the same horizontal displacement at the loop boundary.",
+    "A very thin pale residual and slight jagged texture remain along enlarged hair edges."
+  ],
+  "deterministic_qa": {
+    "source_frame_map": [1, 2, 3, 4, 3, 2, 1, 1],
+    "logical_slots": 8,
+    "distinct_expressions": 4,
+    "total_duration_ms": 1900,
+    "encoded_timelines_match": true,
+    "animations_loop_forever": true,
+    "fixed_legs": true,
+    "native_foot_baseline": 193,
+    "fixed_endpoint_changed_pixels": 0,
+    "sway_endpoint_changed_pixels": 0,
+    "webp_encoded_frames": {
+      "fixed_512": 7,
+      "sway_512": 8,
+      "sway_native_192x208": 8
+    },
+    "gif_encoded_frames": 7,
+    "fixed_hold_merge_explanation": "The final two identical open-eye holds are encoded as one 980 ms frame while both logical slots are independently checked."
+  },
+  "browser_validation": {
+    "preview_page_opened": true,
+    "loaded_images": 5,
+    "expected_images": 5,
+    "native_192x208_animation_displayed": true,
+    "first_last_stills_displayed": true
+  },
+  "release_blockers": [
+    "Only the idle animation preview is complete; the full 8x11 Codex pet atlas is not accepted.",
+    "The remaining action loops and 16 semantic gaze directions still require completion and review."
+  ]
+}

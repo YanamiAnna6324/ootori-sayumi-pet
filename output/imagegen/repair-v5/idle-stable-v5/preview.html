@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ootori Sayumi pet · 无缝待机</title>
+<style>
+  :root { color-scheme: light; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; color: #253044; background: #f3f4f8; }
+  body { max-width: 1000px; margin: 28px auto; padding: 0 22px 36px; }
+  h1 { font-size: 25px; margin-bottom: 8px; }
+  p { color: #596579; line-height: 1.7; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; align-items: center; }
+  button { font: inherit; padding: 8px 14px; background: white; color: #253044; border: 1px solid #ccd1dc; border-radius: 8px; cursor: pointer; }
+  button[aria-pressed="true"] { background: #e4e9fc; border-color: #7e91cf; }
+  .grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+  article { border: 1px solid #dce0e8; background: white; border-radius: 8px; overflow: hidden; }
+  h2 { font-size: 17px; margin: 18px 20px 6px; }
+  article p { margin: 0 20px 14px; font-size: 13px; }
+  .stage { display: flex; align-items: center; justify-content: center; min-height: 400px; background-color: #f8f8fa; background-image: conic-gradient(#e4e6ed 25%,transparent 0 50%,#e4e6ed 0 75%,transparent 0); background-size: 32px 32px; }
+  .stage img { width: min(100%,384px); height: auto; }
+  .native { margin-top: 18px; }
+  .native .stage { min-height: 240px; }
+  .native .stage img { width: 192px; height: 208px; }
+  .comparison { margin-top: 18px; }
+  .still-pair { display: flex; justify-content: center; gap: 28px; padding: 18px; }
+  figure { margin: 0; text-align: center; }
+  figure img { display: block; width: 192px; height: 208px; }
+  figcaption { margin-top: 8px; color: #596579; font-size: 13px; }
+  .caption { font-size: 13px; margin-top: 22px; }
+  .white .stage, .white .still-pair { background: #fff; }
+  .dark .stage, .dark .still-pair { background: #252a36; }
+  a { color: #435fbc; }
+  #status { font-size: 12px; color: #65718a; margin-left: 8px; }
+  @media(max-width:680px) { .grid { grid-template-columns: 1fr; } body { margin-top: 18px; } .still-pair { gap: 12px; padding: 12px 6px; } figure img { width: min(42vw,192px); height: auto; aspect-ratio: 192 / 208; } }
+</style>
+<h1>Ootori Sayumi pet · 无缝待机</h1>
+<p>8 个逻辑时段，约 1.9 秒；4 种表情组成一次中段眨眼，首尾眼睛完全一致。保留原始身体与短腿比例；右侧仅加入极轻的上半身晃动。</p>
+<div class="toolbar" role="group" aria-label="预览背景">
+  <button data-bg="checker" aria-pressed="true">棋盘背景</button>
+  <button data-bg="white" aria-pressed="false">浅色背景</button>
+  <button data-bg="dark" aria-pressed="false">深色背景</button>
+  <span id="status" role="status">正在加载动画…</span>
+</div>
+<div class="grid">
+  <article>
+    <h2>固定身体 · 无缝眨眼</h2>
+    <p>睁眼 → 闭眼 → 原路睁眼 → 睁眼停留</p>
+    <div class="stage"><img src="idle-stable-preview.webp" alt="固定身体的无缝眨眼动画" width="512" height="512"></div>
+  </article>
+  <article>
+    <h2>表情变化 · 轻微晃动</h2>
+    <p>首尾位移相同；腿部与脚底保持固定</p>
+    <div class="stage"><img src="gentle-sway/idle-gentle-sway.webp" alt="加入极轻上半身晃动的无缝眨眼动画" width="512" height="512"></div>
+  </article>
+</div>
+<article class="native">
+  <h2>实际宠物帧尺寸 · 192 × 208</h2>
+  <p>轻微晃动版本的实际尺寸动画。</p>
+  <div class="stage"><img src="gentle-sway/idle-gentle-sway-192.webp" alt="192乘208尺寸的无缝待机动画" width="192" height="208"></div>
+</article>
+<article class="comparison">
+  <h2>首帧 / 末帧 · 192 × 208</h2>
+  <p>两张静态图的可见像素完全一致，确认循环接缝。</p>
+  <div class="still-pair">
+    <figure><img src="frames-192/frame-01.png" alt="第1逻辑时段首帧"><figcaption>首帧 · 01</figcaption></figure>
+    <figure><img src="frames-192/frame-08.png" alt="第8逻辑时段末帧"><figcaption>末帧 · 08</figcaption></figure>
+  </div>
+</article>
+<p class="caption">固定身体 WebP/GIF 会合并相邻相同的末帧，编码帧数为 7；逻辑时间线仍是 8 个时段、总时长 1,900 ms。QA 已检查所有四个动画的时间线和循环标记。完整宠物包尚未完成。<br>
+  <a href="gentle-sway/idle-gentle-sway.webp">打开透明 WebP</a> ·
+  <a href="idle-stable-preview.gif">打开固定身体 GIF</a> ·
+  <a href="gentle-sway/idle-gentle-sway-contact.png">查看晃动联系表</a> ·
+  <a href="idle-stable-contact.png">查看固定身体联系表</a> ·
+  <a href="README.md">查看交付说明</a>
+</p>
+<script>
+  const images = [...document.images];
+  const status = document.querySelector('#status');
+  function loaded() {
+    const failures = images.filter(image => image.complete && !image.naturalWidth);
+    const count = images.filter(image => image.complete && image.naturalWidth).length;
+    status.textContent = failures.length ? '有动画或对照图未能加载，请检查文件是否齐全。' : `${count} / ${images.length} 个动画或对照图已加载`;
+  }
+  for (const image of images) { image.addEventListener('load', loaded); image.addEventListener('error', loaded); }
+  loaded();
+  for (const button of document.querySelectorAll('[data-bg]')) {
+    button.addEventListener('click', () => {
+      document.body.className = button.dataset.bg;
+      for (const item of document.querySelectorAll('[data-bg]')) item.setAttribute('aria-pressed', String(item === button));
+    });
+  }
+</script>
+</html>
